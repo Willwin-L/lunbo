@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lunbo</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        @keyframes lbmv{
+            0{}
+            25%{margin-left: -200px;}
+            50%{margin-left: -400px;}
+            75%{margin-left: -600px;}
+            100%{margin-left: -800px;}
+        }
+        ul{list-style: none;}
+        
+        .lbwap{
+            border: 3px solid #ff0;
+            width: 200px;
+            height: 300px;
+            overflow: hidden;
+        }
+        .lbwap .lbul{
+            width: 1000px;
+            animation: lbmv 2s linear infinite;
+            overflow: hidden;
+        }
+        .lbwap .lbul li{
+            width: 200px;
+            height: 300px;
+            float: left;
+        }
+        .lbwap .lbli1{background-image: url(1.jpg)}
+        .lbwap .lbli2{background-image: url(2.jpg)}
+        .lbwap .lbli3{background-image: url(3.jpg)}
+        .lbwap .lbli4{background-image: url(4.jpg)}
+    </style>
+</head>
+<body>
+    <div class="lbwap">
+        <ul class="lbul">
+            <li class="lbli1"></li>
+            <li class="lbli2"></li>
+            <li class="lbli3"></li>
+            <li class="lbli4"></li>
+            <li class="lbli1"></li>
+        </ul>
+    </div>
+</body>
+</html>
